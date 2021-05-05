@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="utf-8"/>
+        <title>Tylers JavaScript Calculator</title>
+        <link href="design.css" rel="stylesheet" type="text/css"/>
+ 
+    </head>
+
+    <body>
+        <script type="text/javascript" src="script.js"></script>
+        <div class="calculator">
+
+            <input type="text" class="calculator-screen" value="0" disabled />
+
+            <div class="calculator-keys">
+                <!-- OPERATOR KEYS -->
+                <button type="button" class="operator" value="+" onclick="InputOperator(value)">+</button>
+                <button type="button" class="operator" value="-" onclick="InputOperator(value)">-</button>
+                <button type="button" class="operator" value="*" onclick="InputOperator(value)">&times;</button>
+                <button type="button" class="operator" value="/" onclick="InputOperator(value)">&divide;</button>
+
+                <!-- NUMPAD -->
+                <button type="button" class="operand" value="7" onclick="InputDigit(value)">7</button>
+                <button type="button" class="operand" value="8" onclick="InputDigit(value)">8</button>
+                <button type="button" class="operand" value="9" onclick="InputDigit(value)">9</button>
+
+                <button type="button" class="operand" value="4" onclick="InputDigit(value)">4</button>
+                <button type="button" class="operand" value="5" onclick="InputDigit(value)">5</button>
+                <button type="button" class="operand" value="6" onclick="InputDigit(value)">6</button>
+
+                <button type="button" class="operand" value="1" onclick="InputDigit(value)">1</button>
+                <button type="button" class="operand" value="2" onclick="InputDigit(value)">2</button>
+                <button type="button" class="operand" value="3" onclick="InputDigit(value)">3</button>
+
+                <button type="button" class="operand" value="0" onclick="InputDigit(value)">0</button>
+                <button type="button" class="operand" value="." onclick="InputDigit(value)">.</button>
+                <button type="button" class="all-clear" value="all-clear" onclick="AllClear()">AC</button>
+
+                <!-- EQUAL SIGN-->
+                <button type="button" class="equal-sign" value="=" onclick="Compute()">=</button>
+            </div>
+        </div>
+
+    </body>
+</html>
